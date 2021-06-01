@@ -6,7 +6,7 @@ type NavProps = {
 }
 
 const Nav = ({ title, links }: NavProps) => (
-  <nav className="fixed top-0 w-full bg-white py-1">
+  <nav className="fixed top-0 w-full bg-white py-1 z-50">
     <div className="flex items-center py-8 px-12">
       <Link href="/">
         <img
