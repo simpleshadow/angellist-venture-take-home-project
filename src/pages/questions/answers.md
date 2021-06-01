@@ -2,6 +2,19 @@
 
 > Suppose we discover a bug with our algorithm and investors for two deals had incorrect allocations. This means that some of the investors ended up investing more than they were allowed to while others invested less than they were allowed to. One of deals happened two years ago and the other one happened two weeks ago. Please describe, in detail, how would you go about correcting this  issue and how would you communicate this to the affected customers.
 
+Immediate concerns:
+
+1. Contact the impacted parties to inform them of the occurence and date of error ensuring that you will provide a resolution timeline within 24 hours and are open to any questions or concerns they may have.
+3. Contact the Legal to see if there are any immediate unknown legal concerns or issues that need to be addressed.
+4. Contact the Finance to see if there are any immediate unknown financial concerns or issues that need to be addressed. 
+5. Contact the reporter(s) of the issue to document steps where bug was discovered.
+6. Create and write an issue to ensure details of bug are documented (and not forgotten) and an estimate of the effort to resolve is understood.
+7. Contact Lead and provide issue to determine the priority of resolving the issue.
+
+If priority:
+
+1. 
+
 &nbsp;  
 &nbsp;  
 &nbsp;  

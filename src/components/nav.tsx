@@ -27,7 +27,7 @@ const Nav = ({ title }: NavProps) => (
       {title && <h1 className="text-lg md:text-xl font-bold md:pl-6 md:border-l border-gray-400">{title}</h1>}
       <div className="inline-flex gap-6 ml-auto md:text-lg">
         {links.map(({ href, title }) => (
-          <span className="border-b border-transparent hover:border-b hover:border-black">
+          <span key="href" className="border-b border-transparent hover:border-b hover:border-black">
             <Link href={href}>{title}</Link>
           </span>
         ))}
