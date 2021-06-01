@@ -1,0 +1,5 @@
+export { default as AllocationsTable } from './allocations-investor-table'
+export { default as Button } from './button'
+export { default as Disclaimer } from './disclaimer'
+export { default as Input } from './input'
+export { default as Nav } from './nav'

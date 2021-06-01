@@ -1,0 +1,35 @@
+.markdown {
+  color: rgba(75, 85, 99, 1);
+}
+
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.markdown h2 {
+  font-size: 1.25rem;
+ line-height: 1.75rem;
+}
+
+.markdown h3 {
+  font-size: 1.125em;
+  line-height: 1.75rem;
+}
+
+.markdown blockquote {
+  color: black;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  border-left: solid 3px black;
+}
+
+.markdown ol {
+  list-style: decimal;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.markdown li {
+  margin-bottom: 0.5rem;
+}
