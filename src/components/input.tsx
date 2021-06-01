@@ -10,7 +10,11 @@ type InputProps<T = any> = {
 
 const Input = ({ className, icon, label, type = 'text', onChange, ...props }: InputProps) => (
   <div className={className}>
-    {label && <label className="block text-xs md:text-sm font-medium text-gray-700 mb-2">{label}</label>}
+    {label && (
+      <label className="block text-xs md:text-sm font-medium text-gray-700 mb-2 whitespace-nowrap">
+        {label}
+      </label>
+    )}
     <div className="relative rounded-md">
       {icon && (
         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">{icon}</div>
