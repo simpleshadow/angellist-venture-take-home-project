@@ -7,25 +7,25 @@ import { Disclaimer, Nav } from '../components'
 
 import '../styles/globals.css'
 
+const navLinks = [
+  {
+    title: 'Allocator',
+    href: '/deals/allocator',
+  },
+  {
+    title: 'Questions',
+    href: '/questions',
+  },
+]
+
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter()
 
   useEffect(() => {
     if (router.pathname === '/') {
-      router.push('/deals/allocation')
+      router.push('/deals/allocator')
     }
   }, [router.pathname])
-
-  let title = ''
-  switch (router.pathname) {
-    case '/deals/allocation':
-      title = 'Allocation'
-      break
-    case '/questions':
-      title = 'Questions'
-    default:
-      break
-  }
 
   return (
     <>
@@ -39,7 +39,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <Nav title={title} />
+      <Nav title={navLinks.find((link) => link.href === router.pathname)?.title || ''} links={navLinks} />
       <div className="h-screen overflow-hidden bg-angellist-off-white pb-8 px-12 pt-44">
         <Component {...pageProps} />
         <Disclaimer />

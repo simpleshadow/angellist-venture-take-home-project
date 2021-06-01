@@ -2,20 +2,10 @@ import Link from 'next/link'
 
 type NavProps = {
   title?: string
+  links: { title: string; href: string }[]
 }
 
-const links = [
-  {
-    title: 'Allocation',
-    href: '/deals/allocation',
-  },
-  {
-    title: 'Questions',
-    href: '/questions',
-  },
-]
-
-const Nav = ({ title }: NavProps) => (
+const Nav = ({ title, links }: NavProps) => (
   <nav className="fixed top-0 w-full bg-white py-1">
     <div className="flex items-center py-8 px-12">
       <Link href="/">
