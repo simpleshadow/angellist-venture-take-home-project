@@ -57,7 +57,7 @@ const AllocationPage = () => {
               }
             />
 
-            <div className="flex flex-row ml-9 mt-6">
+            <div className="flex flex-row md:ml-9 mt-6">
               <Button
                 title="+ Add investor"
                 color="text"

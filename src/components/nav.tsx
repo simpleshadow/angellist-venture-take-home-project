@@ -7,7 +7,7 @@ type NavProps = {
 
 const Nav = ({ title, links }: NavProps) => (
   <nav className="fixed top-0 w-full bg-white py-1 z-50">
-    <div className="flex items-center py-8 px-12">
+    <div className="flex items-center py-4 px-6 md:py-8 md:px-12">
       <Link href="/">
         <img
           src="/images/angellist-venture-logo.svg"

@@ -40,7 +40,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       </Head>
 
       <Nav title={navLinks.find((link) => link.href === router.pathname)?.title || ''} links={navLinks} />
-      <div className="h-screen overflow-x-hidden bg-angellist-off-white pb-8 px-12 pt-44">
+      <div className="h-screen overflow-x-hidden bg-angellist-off-white pb-8 px-12 pt-32 md:pt-44">
         <Component {...pageProps} />
         <Disclaimer />
       </div>

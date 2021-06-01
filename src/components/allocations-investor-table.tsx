@@ -38,7 +38,7 @@ const AllocationsTableRow = ({
   onRemoveInvestor,
 }: AllocationsTableRowProps) => {
   return (
-    <div className="flex items-center mb-2">
+    <div className="flex items-center mb-8 md:mb-2">
       <button
         className={`w-10 h-10 -ml-3 mr-2 rounded-xl ${
           isRemovalDisabled ? 'pointer-events-none opacity-0' : 'opacity-10'
@@ -49,11 +49,11 @@ const AllocationsTableRow = ({
       >
         ✖
       </button>
-      <div className="grid grid-cols-12 gap-2 md:gap-6 w-full ">
+      <div className="grid md:grid-cols-12 gap-2 md:gap-6 w-full">
         <Input
           className="col-span-4"
           type="text"
-          label={isFirstRow && 'Name'}
+          label={(isFirstRow || window.innerWidth < 768) && 'Name'}
           placeholder="Xinran Xiao"
           value={name || ''}
           onChange={(value) => onInvestorChange({ investment, name: value })}
@@ -61,7 +61,7 @@ const AllocationsTableRow = ({
         <Input
           className="col-span-4"
           type="number"
-          label={isFirstRow && 'Requested amount'}
+          label={(isFirstRow || window.innerWidth < 768) && 'Requested amount'}
           placeholder="0.00"
           value={investment.requesting || ''}
           onChange={(value) =>
@@ -77,7 +77,7 @@ const AllocationsTableRow = ({
         <Input
           className="col-span-4"
           type="number"
-          label={isFirstRow && 'Average investment'}
+          label={(isFirstRow || window.innerWidth < 768) && 'Average investment'}
           placeholder="0.00"
           value={investment.historicalAverage || ''}
           onChange={(value) =>
